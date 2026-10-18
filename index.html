@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" type="button">Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I am a student and an aspiring web developer.</p>
+            <p>I am passionate about technology and learning how websites work.</p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="technology.jpg"
+                 alt="Computer programming workstation"
+                 class="tech-image">
+            <p>
+                I am a student interested in computer programming,
+                web development, and building useful technology solutions.
+                I enjoy learning new skills and developing my abilities.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education Background</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Education Level</th>
+                        <th>Institution</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>University</td>
+                        <td>My Institution</td>
+                        <td>Currently Studying</td>
+                    </tr>
+                    <tr>
+                        <td>Secondary School</td>
+                        <td>My School</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact & Feedback</h2>
+            <p>Send me a message or share your feedback.</p>
+
+            <form id="contact-form"
+                  action="https://formspree.io/f/YOUR_FORM_ID"
+                  method="POST">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                          rows="5" required></textarea>
+
+                <button type="submit" id="submit-btn">Send Message</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Personal Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
